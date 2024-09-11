@@ -1,10 +1,6 @@
-import 'dart:io';
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:puc_flutter_virtual/home_page.dart';
-import 'package:puc_flutter_virtual/profile_page.dart';
-import 'package:puc_flutter_virtual/search_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,7 +9,7 @@ void main() async {
     final usedCamera = cameras.first;
     runApp(MainApp(camera: usedCamera));
   } else {
-    runApp(HomePage());
+    runApp(const HomePage());
   }
 }
 
@@ -46,7 +42,7 @@ class _MainAppState extends State<MainApp> {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Câmera'),
+            title: const Text('Câmera'),
           ),
           body: FutureBuilder(
             future: _initializer,
@@ -65,7 +61,7 @@ class _MainAppState extends State<MainApp> {
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () => _takePicture(),
-            child: Icon(Icons.photo_camera),
+            child: const Icon(Icons.photo_camera),
           ),
         ),
       ),

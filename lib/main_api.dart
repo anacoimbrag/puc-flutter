@@ -1,9 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:puc_flutter_virtual/home_page.dart';
 import 'package:puc_flutter_virtual/model/photo.dart';
 
 import 'package:http/http.dart' as http;
@@ -14,7 +12,7 @@ void main() async {
 }
 
 class MainApp extends StatefulWidget {
-  MainApp({super.key});
+  const MainApp({super.key});
 
   @override
   State<MainApp> createState() => _MainAppState();
@@ -38,7 +36,7 @@ class _MainAppState extends State<MainApp> {
               );
             }
 
-            return Center(
+            return const Center(
               child: CircularProgressIndicator(),
             );
           },

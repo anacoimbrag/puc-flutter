@@ -2,15 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:location/location.dart';
-import 'package:puc_flutter_virtual/services/location_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatefulWidget {
-  MainApp({super.key});
+  const MainApp({super.key});
 
   @override
   State<MainApp> createState() => _MainAppState();
@@ -32,7 +31,7 @@ class _MainAppState extends State<MainApp> {
       home: SafeArea(
         child: Scaffold(
             appBar: AppBar(
-              title: Text('Mapa'),
+              title: const Text('Mapa'),
             ),
             body: FutureBuilder(
               future: _getCurrentLocation(),

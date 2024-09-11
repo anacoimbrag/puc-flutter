@@ -24,7 +24,7 @@ class _MyListState extends State<MyList> {
     return Column(
       children: [
         TextField(
-          decoration: InputDecoration(labelText: 'Buscar por...'),
+          decoration: const InputDecoration(labelText: 'Buscar por...'),
           onChanged: (value) => setState(() {
             listItems = allItems.where((item) => item.contains(value)).toList();
           }),
