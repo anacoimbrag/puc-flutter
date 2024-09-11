@@ -8,11 +8,11 @@ import 'package:http/http.dart' as http;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MainApp());
+  runApp(MainApp());
 }
 
 class MainApp extends StatefulWidget {
-  const MainApp({super.key});
+  MainApp({super.key});
 
   @override
   State<MainApp> createState() => _MainAppState();

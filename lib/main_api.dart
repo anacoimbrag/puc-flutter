@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatefulWidget {
