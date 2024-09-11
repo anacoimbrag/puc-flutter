@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Mapa",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_mapa.dart"
+        },
+        {
+            "name": "Mapa (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main_mapa.dart"
+        },
+        {
+            "name": "Mapa (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main_mapa.dart"
+        }
+    ]
+}
